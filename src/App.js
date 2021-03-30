@@ -1,10 +1,8 @@
-import './App.css';
+import Portfolio from './Components/Portfolio.jsx'
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Portfolio />
   );
 }
 

@@ -1,0 +1,39 @@
+.examples {
+    @media screen and (min-width: 320px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &List {        
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 0;       
+        display: grid;
+        @media screen and (max-width: 767px) {
+            max-width: 450px;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 768px; 
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;                      
+        }
+        @media screen and (min-width: 1280px) {
+            width: 1280px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    &Link img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
