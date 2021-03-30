@@ -7,7 +7,7 @@ import Header from './Header/Header';
 import Home from './Home/Home';
 import About from './About/About';
 import Examples from './Examples/Examples';
-
+import Social from './Social/Social';
 export default function Portfolio () {
     return (<Router>
         <Header />
@@ -22,6 +22,6 @@ export default function Portfolio () {
             <Home />
           </Route>
         </Switch>
-    
+        <Social/>
     </Router>);    
 }
