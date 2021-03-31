@@ -68,7 +68,7 @@ text-decoration: none;
 padding-top: 10px;
 padding-bottom: 10px;
 border-bottom: 2px solid transparent;
-
+transition: all 500ms ease-in;
 @media screen and (min-width: 320px) {
     font-size: 16px;
 }
@@ -80,3 +80,33 @@ border-bottom: 2px solid transparent;
 color: #ffffff;
 border-bottom: 2px solid #ffffff;
 }
+
+.appear {
+    transform: translateY(-100%);
+    opacity: 0.1;
+  }
+  .appearActive {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1000ms ease-in;
+  }
+  
+//   .enter {
+//     transform: translateY(-100%);
+//     opacity: 0.1;
+//   }
+//   .enterActive {
+//     transform: translateY(0);
+//     opacity: 1;
+//     transition: all 700ms ease-in;
+//   }
+  
+//   .exit {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+//   .exitActive {
+//     transform: translateY(-100%);
+//     opacity: 0.1;
+//     transition: all 700ms ease-in;
+//   }

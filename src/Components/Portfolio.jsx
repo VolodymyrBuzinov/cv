@@ -8,8 +8,10 @@ import Home from './Home/Home';
 import About from './About/About';
 import Examples from './Examples/Examples';
 import Social from './Social/Social';
+
 export default function Portfolio () {
-    return (<Router>
+    return (    
+    <Router>
         <Header />
         <Switch>          
           <Route path="/about">
@@ -23,5 +25,6 @@ export default function Portfolio () {
           </Route>
         </Switch>
         <Social/>
-    </Router>);    
+    </Router>
+    );    
 }

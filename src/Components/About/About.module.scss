@@ -5,7 +5,7 @@
         padding-bottom: 20px;
     }   
     @media screen and (min-width: 1280px) {
-        padding-top: 200px; 
+        padding-top: 100px; 
               
     }
     &Info {        
@@ -34,4 +34,42 @@
             padding-bottom: 60px;    
         }
     }
+    &List {
+       display: grid;
+       padding: 0;        
+       padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;      
+       @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+        max-width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;  
+        grid-template-columns: repeat(8, 1fr);                
+    }
+    @media screen and (min-width: 1280px) {
+        width: 1280px;         
+    }
+    }
+    &ListItem {
+        text-align: center;
+        & svg {
+            width: 40px;
+            height: 40px;
+            @media screen and (min-width: 1280px) {
+                width: 60px;
+                height: 60px;        
+            }
+        }
+    }
 }
+.appear {    
+    opacity: 0.1;
+  }
+  .appearActive {    
+    opacity: 1;
+    transition: all 500ms ease-in;
+  }

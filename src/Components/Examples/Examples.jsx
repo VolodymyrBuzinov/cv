@@ -1,7 +1,8 @@
 import styles from './Examples.module.scss';
-
+import { CSSTransition } from 'react-transition-group';
 export default function Examples () {
-    return(<section className={styles.examples}>
+    return(<CSSTransition in={true} appear={true} timeout={500} classNames={styles}>
+    <section className={styles.examples}>
         <h2 className={styles.examplesTitle}>Team projects</h2>
     <ul className={styles.examplesList}>        
         <li className={styles.examplesListItem}>
@@ -38,5 +39,6 @@ export default function Examples () {
             </a>
         </li>
     </ul>
-    </section>)
+    </section>
+    </CSSTransition>)
 }
