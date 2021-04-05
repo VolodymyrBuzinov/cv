@@ -4,7 +4,12 @@ export default function Examples () {
     return(<CSSTransition in={true} appear={true} timeout={500} classNames={styles}>
     <section className={styles.examples}>
         <h2 className={styles.examplesTitle}>Team projects</h2>
-    <ul className={styles.examplesList}>        
+    <ul className={styles.examplesList}>     
+    <li className={styles.examplesListItem}>
+            <a className={styles.examplesLink} href="https://hotelsmy.netlify.app/" aria-label='go to weather app'>
+                <img src="https://i.ibb.co/vcpYpr0/05-04-2021-18-45-52.png" alt="weather app"/>               
+            </a>
+        </li>   
         <li className={styles.examplesListItem}>
             <a className={styles.examplesLink} href="https://freewebweather.netlify.app/" aria-label='go to weather app'>
                 <img src="https://i.ibb.co/C1Lnrbg/web-weather.png" alt="weather app"/>               
